@@ -1,0 +1,322 @@
+/* Courses Section */
+.courses {
+    padding-top: var(--space-6);
+}
+
+.course-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-6);
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.filter-btn {
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--gray-200);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    color: var(--gray-700);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    background-color: var(--gray-300);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-5);
+}
+
+.course-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.course-icon {
+    background-color: var(--primary-light);
+    padding: var(--space-4);
+    text-align: center;
+}
+
+.course-icon i {
+    font-size: var(--font-size-3xl);
+    color: var(--white);
+}
+
+.course-content {
+    padding: var(--space-4);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-content h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-3);
+    color: var(--gray-900);
+}
+
+.course-content p {
+    color: var(--gray-700);
+    margin-bottom: var(--space-3);
+}
+
+.course-features {
+    margin-bottom: var(--space-4);
+    flex-grow: 1;
+}
+
+.course-features li {
+    margin-bottom: var(--space-2);
+    color: var(--gray-700);
+    display: flex;
+    align-items: center;
+}
+
+.course-features li i {
+    color: var(--success-color);
+    margin-right: var(--space-2);
+}
+
+/* Schedule Section */
+.schedule {
+    background-color: var(--secondary-color);
+    padding: var(--space-8) 0;
+}
+
+.schedule-table-container {
+    overflow-x: auto;
+    margin-bottom: var(--space-4);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: var(--space-3) var(--space-4);
+    text-align: left;
+    border-bottom: 1px solid var(--gray-300);
+}
+
+.schedule-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: var(--gray-100);
+}
+
+.schedule-table tr:hover {
+    background-color: rgba(0, 102, 204, 0.05);
+}
+
+.schedule-note {
+    text-align: center;
+    color: var(--gray-600);
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact {
+    padding: var(--space-8) 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+}
+
+.contact-card {
+    background-color: var(--white);
+    padding: var(--space-4);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--space-3);
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: var(--font-size-xl);
+    color: var(--white);
+}
+
+.contact-details h3 {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-2);
+    color: var(--gray-900);
+}
+
+.contact-details p {
+    font-size: var(--font-size-sm);
+    color: var(--gray-700);
+    line-height: 1.5;
+}
+
+.map-container {
+    grid-column: span 2;
+    position: relative;
+    height: 250px;
+    margin-top: var(--space-4);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.static-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.map-container:hover .map-overlay {
+    opacity: 1;
+}
+
+.contact-form-container {
+    background-color: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-form {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: var(--space-2);
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: var(--space-3);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        order: 2;
+    }
+    
+    .contact-form-container {
+        order: 1;
+        margin-bottom: var(--space-5);
+    }
+}
+
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .filter-btn {
+        padding: var(--space-2) var(--space-3);
+        font-size: var(--font-size-sm);
+    }
+    
+    .course-content {
+        padding: var(--space-3);
+    }
+    
+    .contact-form-container {
+        padding: var(--space-4);
+    }
+}
