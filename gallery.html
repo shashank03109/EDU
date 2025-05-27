@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Excel Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Excel<span class="accent">Academy</span></span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="students-corner.html">Students Corner</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="courses.html#contact" class="btn-nav">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="students-corner.html">Students Corner</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="courses.html#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Celebrating achievements and moments of success</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Achievements</h2>
+                <p>Showcasing the success stories of our students</p>
+            </div>
+            
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Batches</button>
+                <button class="filter-btn" data-filter="class-x">Class X</button>
+                <button class="filter-btn" data-filter="class-xii">Class XII</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Class X Images -->
+                <div class="gallery-item" data-category="class-x">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="Class X Toppers 2024" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Class X Toppers 2024</h3>
+                                <p>Students who scored above 95% in CBSE Board Exams</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-x">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="Class X Science Exhibition" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Science Exhibition</h3>
+                                <p>Class X students presenting innovative science projects</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-x">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg" alt="Class X Mathematics Olympiad" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Mathematics Olympiad</h3>
+                                <p>Class X students who qualified for National Mathematics Olympiad</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-x">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg" alt="Class X Award Ceremony" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Award Ceremony</h3>
+                                <p>Class X students receiving academic excellence awards</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Class XII Images -->
+                <div class="gallery-item" data-category="class-xii">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg" alt="Class XII Toppers 2024" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Class XII Toppers 2024</h3>
+                                <p>Students who secured top ranks in CBSE Board Exams</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-xii">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Class XII Physics Practical" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Physics Practical Session</h3>
+                                <p>Class XII students performing advanced physics experiments</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-xii">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Class XII Chemistry Lab" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Chemistry Laboratory</h3>
+                                <p>Class XII students in the chemistry lab</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-xii">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184455/pexels-photo-3184455.jpeg" alt="Class XII Graduation Day" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Graduation Day</h3>
+                                <p>Class XII students celebrating successful completion of board exams</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-xii">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg" alt="Class XII JEE Qualifiers" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>JEE Qualifiers</h3>
+                                <p>Class XII students who qualified for JEE Advanced</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="class-xii">
+                    <div class="gallery-image">
+                        <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg" alt="Class XII Mathematics Workshop" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Mathematics Workshop</h3>
+                                <p>Class XII students participating in advanced mathematics workshop</p>
+                            </div>
+                            <button class="gallery-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="Lightbox Image">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <button id="prev-btn" class="lightbox-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-btn" class="lightbox-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Excel Academy</h3>
+                    <p>Excel Academy is a premier coaching institute dedicated to providing quality education to students from class VI to XII.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="students-corner.html">Students Corner</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="courses.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@excelacademy.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Excel Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

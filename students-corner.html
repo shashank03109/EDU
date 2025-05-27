@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Corner - Excel Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/students-corner.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+    <script>
+        // Set the workerSrc property before using PDF.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.worker.min.js';
+    </script>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Excel<span class="accent">Academy</span></span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="students-corner.html" class="active">Students Corner</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="courses.html#contact" class="btn-nav">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="students-corner.html" class="active">Students Corner</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="courses.html#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Students Corner</h1>
+            <p>Access study materials and resources</p>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="materials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Study Materials</h2>
+                <p>Access class-specific notes, assignments, and study guides</p>
+            </div>
+            
+            <!-- Class Tabs -->
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="tab-vi">Class VI</button>
+                    <button class="tab-btn" data-tab="tab-vii">Class VII</button>
+                    <button class="tab-btn" data-tab="tab-viii">Class VIII</button>
+                    <button class="tab-btn" data-tab="tab-ix">Class IX</button>
+                    <button class="tab-btn" data-tab="tab-x">Class X</button>
+                    <button class="tab-btn" data-tab="tab-xi">Class XI</button>
+                    <button class="tab-btn" data-tab="tab-xii">Class XII</button>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Class VI -->
+                    <div id="tab-vi" class="tab-pane active">
+                        <div class="material-category">
+                            <h3>Mathematics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Numbers and Algebra</h4>
+                                        <p>Comprehensive notes on integers, fractions, and basic algebra</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Geometry Basics</h4>
+                                        <p>Introduction to points, lines, angles, and basic shapes</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="material-category">
+                            <h3>Science</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Living Organisms</h4>
+                                        <p>Notes on plants, animals, and their habitats</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Materials and Solutions</h4>
+                                        <p>Basic chemistry concepts for beginners</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Class VII -->
+                    <div id="tab-vii" class="tab-pane">
+                        <div class="material-category">
+                            <h3>Mathematics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Linear Equations</h4>
+                                        <p>Solving simple linear equations and applications</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Congruence and Similarity</h4>
+                                        <p>Understanding geometric congruence and similarity</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="material-category">
+                            <h3>Science</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Heat and Temperature</h4>
+                                        <p>Understanding thermal energy and its measurement</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Respiration in Organisms</h4>
+                                        <p>Detailed notes on respiratory systems</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Class VIII -->
+                    <div id="tab-viii" class="tab-pane">
+                        <!-- Content for Class VIII -->
+                        <div class="material-category">
+                            <h3>Mathematics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Quadratic Equations</h4>
+                                        <p>Introduction to quadratic equations and their solutions</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Class IX -->
+                    <div id="tab-ix" class="tab-pane">
+                        <!-- Content for Class IX -->
+                        <div class="material-category">
+                            <h3>Mathematics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Coordinate Geometry</h4>
+                                        <p>Complete notes on coordinate systems and applications</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Class X -->
+                    <div id="tab-x" class="tab-pane">
+                        <!-- Content for Class X -->
+                        <div class="material-category">
+                            <h3>Mathematics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Trigonometry</h4>
+                                        <p>Comprehensive notes on trigonometric functions and identities</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Class XI -->
+                    <div id="tab-xi" class="tab-pane">
+                        <!-- Content for Class XI -->
+                        <div class="material-category">
+                            <h3>Physics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Mechanics</h4>
+                                        <p>Detailed notes on kinematics and dynamics</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="material-category">
+                            <h3>Chemistry</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Atomic Structure</h4>
+                                        <p>Comprehensive notes on atomic models and electron configuration</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="material-category">
+                            <h3>Mathematics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Calculus</h4>
+                                        <p>Introduction to limits, continuity, and differentiation</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Class XII -->
+                    <div id="tab-xii" class="tab-pane">
+                        <!-- Content for Class XII -->
+                        <div class="material-category">
+                            <h3>Physics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Electromagnetism</h4>
+                                        <p>Comprehensive notes on electric and magnetic fields</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="material-category">
+                            <h3>Chemistry</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Organic Chemistry</h4>
+                                        <p>Detailed notes on organic compounds and reactions</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="material-category">
+                            <h3>Mathematics</h3>
+                            <div class="material-list">
+                                <div class="material-card">
+                                    <div class="material-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="material-details">
+                                        <h4>Integration</h4>
+                                        <p>Advanced integration techniques and applications</p>
+                                        <button class="btn btn-sm btn-primary view-pdf" data-pdf="sample.pdf">View PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="pdfTitle">Document Title</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="pdf-container">
+                    <div id="pdfViewer"></div>
+                </div>
+                <div class="pdf-controls">
+                    <button id="prevPage" class="btn btn-sm btn-secondary"><i class="fas fa-chevron-left"></i> Previous</button>
+                    <span id="pageInfo">Page <span id="currentPage">0</span> of <span id="totalPages">0</span></span>
+                    <button id="nextPage" class="btn btn-sm btn-secondary">Next <i class="fas fa-chevron-right"></i></button>
+                    <select id="zoomLevel" class="zoom-select">
+                        <option value="0.5">50%</option>
+                        <option value="0.75">75%</option>
+                        <option value="1" selected>100%</option>
+                        <option value="1.25">125%</option>
+                        <option value="1.5">150%</option>
+                        <option value="2">200%</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screenshot Detection Overlay -->
+    <div id="screenshotOverlay" class="screenshot-overlay hidden">
+        <div class="overlay-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h2>Screenshot Detected!</h2>
+            <p>Taking screenshots of protected content is not allowed.</p>
+            <button id="closeOverlay" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Protection Overlay (For PDF Security) -->
+    <div id="protectionOverlay" class="protection-overlay hidden">
+        <!-- This is an invisible overlay to prevent direct copying/saving of PDFs -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Excel Academy</h3>
+                    <p>Excel Academy is a premier coaching institute dedicated to providing quality education to students from class VI to XII.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="students-corner.html">Students Corner</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="courses.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Learning City</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@excelacademy.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Excel Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/students-corner.js"></script>
+</body>
+</html>
